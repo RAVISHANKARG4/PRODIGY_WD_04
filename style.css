@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 15px;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.home-section h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.home-section p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.home-section img {
+  border-radius: 50%;
+  margin-top: 20px;
+  max-width: 80%;
+  height: auto;
+}
+.about-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+}
+.skills-section {
+  padding: 50px;
+  text-align: center;
+}
+.skills-section h2 {
+  margin-bottom: 20px;
+}
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+.projects-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.view-project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.view-project-btn:hover {
+  background-color: #45a049;
+}
+.project {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project a {
+  color: #333;
+  text-decoration: none; /* Missing closing brace was here */
+}
+.contact-section {
+  padding: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.contact-section form button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-section form button:hover {
+  background-color: green;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 36px;
+  }
+  .home-section p {
+    font-size: 20px;
+  }
+  .home-section img {
+    max-width: 90%;
+  }
+}
